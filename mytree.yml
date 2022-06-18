@@ -1,8 +1,8 @@
 ---
 - hosts: all
-  become: yes
+  become: yes 
   tasks:
-  - name: install tree onnodes
-    apt: 
-      name: tree
-      state: absent
+  - name: i want to install tree
+    apt:
+     name: tree
+     state: present 
