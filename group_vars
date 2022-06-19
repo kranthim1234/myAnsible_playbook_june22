@@ -1,0 +1,4 @@
+---
+myvariable: value
+mywebpackonubentu: apache2
+mywebpackonredhat: httpd
