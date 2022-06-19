@@ -4,24 +4,24 @@
   tasks:
   - name: i want to install webserver on ubento
     apt:
-      name: apache2
+      name: "{{mywebpackonubentu}}"
       state: present
     when: ansible_os_family =="Debian"
    
   - name: i want to start webserver on ubento
     service:
-      name: apache2
-      state: started
+      name: "{{mywebpackonubentu}}"
+      state: 
     when: ansible_os_family =="Debian"
 
   - name: i want to install webserver on redhat 
     yum: 
-      name: http
+      name: "{{mywebpackonredhat}}"
       state: present 
     when: ansible_os_family =="RedHat"
 
   - name: i want to start webserver on redhat 
     service:
-      name: httpd
+      name: "{{mywebpackonredhat}}"
       state: started 
     when: ansible_os_family =="RedHat"
