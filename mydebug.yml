@@ -1,0 +1,6 @@
+---
+- hosts: 10.0.11.237
+  become: yes
+  tasks: 
+  - name: execute linex comand
+    command: hostname -f 
