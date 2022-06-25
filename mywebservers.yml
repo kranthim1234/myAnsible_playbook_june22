@@ -1,0 +1,6 @@
+---
+myvariable: value
+mywebpackonubentu: apache2
+mywebpackonredhat: httpd
+myjavapackonubentu: openjdk-8-jre
+myjavapackagonredhat: java-1.8.0-openjdk
