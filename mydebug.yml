@@ -3,4 +3,9 @@
   become: yes
   tasks: 
   - name: execute linex comand
-    command: hostname -f 
+    command: hostname -f
+    register: myfirsttaskresult 
+
+  - name: i want to see first task 
+    debug:
+      msg: "{{myfirsttaskresult}}"
