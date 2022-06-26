@@ -3,7 +3,7 @@
   become: yes 
   tasks:
   - name: i want to copy files from ansible 
-    Copy: 
+    copy: 
       src: mystatic
       dest: /home/ubuntu/mystaticfile
 
