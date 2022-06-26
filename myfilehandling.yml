@@ -6,8 +6,8 @@
 
   - name: i want to copy files from ansible 
     copy: 
-    src: mystatic
-    dest: /home/ubuntu/mystaticfile
+      src: mystatic
+      dest: /home/ubuntu/mystaticfile
 
   - name: i want to install webserver 
     apt: 
@@ -24,3 +24,9 @@
       get_url:
       dest: /home/ubuntu/urlfile
       force_basic_auth: yes 
+
+  handlers: 
+  - name: restare 
+    service: 
+      name: apache2
+      state: restartd 
