@@ -3,7 +3,7 @@
   become: yes 
   tasks:
   - name: i want to copy files from ansible 
-    copy: 
+    Copy: 
       src: mystatic
       dest: /home/ubuntu/mystaticfile
 
@@ -24,7 +24,7 @@
       force_basic_auth: yes 
 
   handlers: 
-  - name: restare 
+  - name: restarewebserver 
     service: 
       name: apache2
       state: restartd 
