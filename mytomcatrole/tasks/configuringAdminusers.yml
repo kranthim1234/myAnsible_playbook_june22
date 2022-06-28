@@ -1,0 +1,15 @@
+---
+- name: i want to copy tomcat user xml file in to nodes 
+  template: 
+    src: templates/mytomuser.j2
+    dest: /opt/tomcat/conf/tomcat-users.xml
+
+- name: i want to copy context file to node 
+  template: 
+    src: templates/mytomcontext.j2
+    dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+- name: i want to copy tomcat host context files in to node 
+  templates: 
+    src: templates/mytomhostcontext.j2
+    dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
