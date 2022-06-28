@@ -9,7 +9,10 @@
     src: templates/mytomcontext.j2
     dest: /opt/tomcat/webapps/manager/META-INF/context.xml
 
-- name: i want to copy tomcat host context files in to node 
-  templates: 
-    src: templates\mytomhostcontext.j2
+
+- name: i want to copy host nodes 
+  template: 
+    src: templates/mytomhostcontext.j2
     dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
+
+    
